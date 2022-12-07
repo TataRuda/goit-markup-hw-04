@@ -9,7 +9,7 @@ body {
   --brand-background-darkcolor: #2f303a;
   --brand-bg-mainpage: rgba(47, 48, 58, 0.4);
   --color-1: #ffffff;
-  --color-2bg: rgba (255, 255, 255, 0.1);
+  --color-2bg: rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -70,7 +70,7 @@ body {
 }
 
 .contacts li a {
-  color: #757575;
+  color: var(--brand-contact-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -81,15 +81,12 @@ body {
 .contacts li a:focus {
   color: var(--brand-logo-color);
 }
+
 .contact-icon {
   margin-right: 10px;
+  fill: currentColor;
+}
 
-  fill: var(--brand-contact-color);
-}
-.contact-icon:hover,
-.contact-icon:focus {
-  fill: var(--brand-logo-color);
-}
 .contacts {
   list-style: none;
   display: flex;
@@ -157,36 +154,32 @@ body {
   gap: 10px;
 }
 .socialicon-footer {
+  background-color: var(--color-2bg);
+  border-radius: 50%;
   fill: var(--color-1);
-  fill-opacity: 1;
 }
-.iconbg-footer {
-  fill: var(--color-1);
-  fill-opacity: 0.1;
-}
+
 .socialicon-footer:hover,
 .socialicon-footer:focus {
+  background-color: var(--brand-logo-color);
   fill: var(--color-1);
-  fill-opacity: 1;
   cursor: pointer;
 }
-.iconbg-footer:hover,
-.iconbg-footer:focus {
-  fill: var(--brand-logo-color);
-  fill-opacity: 1;
-}
+
 .offer-main {
   background-image: linear-gradient(
       var(--brand-bg-mainpage),
       var(--brand-bg-mainpage)
     ),
-    url(/images/imgbackground.jpg);
+    url(../images/imgbackground.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  display: block;
+  background-position: center;
+  background-size: 1600px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 200px 0px 200px 0px;
-  max-width: 1600px;
 }
 .offer-main-description {
   font-weight: 900;
@@ -196,7 +189,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-1);
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .offer-button {
   font-weight: 700;
@@ -210,9 +204,10 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  display: flex;
-  align-items: center;
-  margin: 0px auto;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 41px 10px 41px;
 }
 .section {
@@ -334,25 +329,16 @@ body {
 }
 
 .social-icon {
+  background-color: var(--color-1);
+  border-radius: 50%;
   fill: var(--brand-icon-color);
-  fill-opacity: 1;
-}
-.iconbg {
-  fill: var(--brand-logo-color);
-  fill-opacity: 0;
 }
 .social-icon:hover,
 .social-icon:focus {
+  background-color: var(--brand-logo-color);
   fill: var(--color-1);
-  fill-opacity: 1;
   cursor: pointer;
 }
-.iconbg:hover,
-.iconbg:focus {
-  fill: var(--brand-logo-color);
-  fill-opacity: 1;
-}
-
 .clients-mainpage h2 {
   font-weight: 700;
   font-size: 36px;
