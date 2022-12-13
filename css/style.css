@@ -11,6 +11,9 @@ body {
   --color-1: #ffffff;
   --color-2bg: rgba(255, 255, 255, 0.1);
 }
+img {
+  display: block;
+}
 
 .container {
   width: 1200px;
@@ -85,6 +88,8 @@ body {
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
+  position: relative;
+  top: 1px;
 }
 
 .contacts {
@@ -220,11 +225,14 @@ body {
   text-transform: uppercase;
   color: #212121;
   margin-top: 0px;
+  margin-bottom: 10px;
 }
 .descripsions-mainpage li p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0px;
+  padding: 0px;
 }
 .descripsions-mainpage {
   list-style: none;
@@ -296,9 +304,7 @@ body {
   margin: 0;
   display: block;
 }
-.team-mainpage-list img {
-  display: block;
-}
+
 .team-mainpage-list figcaption {
   text-align: center;
   font-weight: 400;
@@ -431,9 +437,7 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.container-projects img {
-  display: block;
-}
+
 .container-projects span {
   font-weight: 700;
   font-size: 18px;
