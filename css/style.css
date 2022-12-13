@@ -88,15 +88,15 @@ img {
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
-  position: relative;
-  top: 1px;
+  vertical-align: middle;
 }
 
 .contacts {
   list-style: none;
   display: flex;
   gap: 30px;
-  align-items: flex-start;
+  align-items: center;
+  vertical-align: middle;
   padding: 0px;
   margin: 0px;
 }
