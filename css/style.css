@@ -66,6 +66,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  outline: none;
 }
 .menu-nav li a:hover,
 .menu-nav li a:focus {
@@ -79,6 +80,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  outline: none;
 }
 .contacts li a:hover,
 .contacts li a:focus {
@@ -100,6 +102,7 @@ img {
   padding: 0px;
   margin: 0px;
 }
+/* START FOOTER*/
 .footer-container {
   background-color: var(--brand-background-darkcolor);
   padding-top: 60px;
@@ -116,6 +119,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  outline: none;
 }
 .contacts-footer .mail-footer {
   text-decoration-line: underline;
@@ -157,20 +161,23 @@ img {
 .linksbox-footer {
   display: flex;
   gap: 10px;
+  line-height: 0.7;
 }
 .socialicon-footer {
   background-color: var(--color-2bg);
   border-radius: 50%;
   fill: var(--color-1);
+  line-height: 0.7;
+  text-decoration: none;
+  outline: none;
 }
-
 .socialicon-footer:hover,
 .socialicon-footer:focus {
   background-color: var(--brand-logo-color);
   fill: var(--color-1);
   cursor: pointer;
 }
-
+/* ENT FOOTER*/
 .offer-main {
   background-image: linear-gradient(
       var(--brand-bg-mainpage),
@@ -330,18 +337,30 @@ img {
   padding-right: 32px;
   padding-left: 32px;
   gap: 10px;
+  line-height: 0.7;
 }
-
 .social-icon {
+  display: block;
+  text-decoration: none;
+  line-height: 0.7;
+  outline: none;
   background-color: var(--color-1);
   border-radius: 50%;
   fill: var(--brand-icon-color);
 }
 .social-icon:hover,
 .social-icon:focus {
-  background-color: var(--brand-logo-color);
   fill: var(--color-1);
+  background-color: var(--brand-logo-color);
   cursor: pointer;
+}
+/* start OUR CLIENTS*/
+.clients-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
 }
 .clients-mainpage h2 {
   font-weight: 700;
@@ -353,26 +372,31 @@ img {
   margin: 0;
   padding: 0;
 }
-.clients-list-item {
+.clients-list a {
   display: block;
+  text-decoration: none;
+  color: var(--brand-icon-color);
   border: 1px solid var(--brand-icon-color);
   border-radius: 4px;
-  fill: var(--brand-icon-color);
+  outline: none;
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
-  fill: var(--brand-logo-color);
+.clients-list a:hover,
+.clients-list a:focus {
+  color: var(--brand-logo-color);
   cursor: pointer;
   border-color: var(--brand-logo-color);
 }
-.clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
-  margin-top: 50px;
+.clients-list-item {
+  fill: currentColor;
 }
+.clients-list-item:hover,
+.clients-list-item:focus {
+  fill: currentColor;
+  border-color: currentColor;
+}
+/* END OUR CLIENTS*/
 
+/* start Portfolio*/
 .portfolio-buttons-list button {
   background: #f5f4fa;
   border-radius: 4px;
@@ -449,3 +473,4 @@ img {
   margin: 0;
   padding-top: 3px;
 }
+/* end Portfolio*/
