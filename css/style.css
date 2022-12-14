@@ -372,27 +372,20 @@ img {
   margin: 0;
   padding: 0;
 }
-.clients-list a {
+.clients-list-item {
   display: block;
   text-decoration: none;
-  color: var(--brand-icon-color);
+  outline: none;
+  line-height: 0.7;
+  fill: var(--brand-icon-color);
   border: 1px solid var(--brand-icon-color);
   border-radius: 4px;
-  outline: none;
-}
-.clients-list a:hover,
-.clients-list a:focus {
-  color: var(--brand-logo-color);
-  cursor: pointer;
-  border-color: var(--brand-logo-color);
-}
-.clients-list-item {
-  fill: currentColor;
 }
 .clients-list-item:hover,
 .clients-list-item:focus {
-  fill: currentColor;
-  border-color: currentColor;
+  fill: var(--brand-logo-color);
+  cursor: pointer;
+  border-color: var(--brand-logo-color);
 }
 /* END OUR CLIENTS*/
 
